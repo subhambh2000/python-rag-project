@@ -1,0 +1,36 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Environment-dependent path to Maven home directory
+/mavenHomeManager.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+
+# IDE/editor configs
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore generated pdfs
+*.pdf
+*.mp3
+*.db
+
+data/notes/*
+.env
