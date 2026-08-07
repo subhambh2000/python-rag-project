@@ -28,11 +28,12 @@ The chatbot answers questions grounded in a personal knowledge base of **Obsidia
 ## How it works
 
 1. **Chunk** — Obsidian markdown notes are split into overlapping, table-aware chunks, each tagged with its source filename.
-2. **Embed** — Chunks are embedded locally on an NVIDIA GPU (PyTorch + CUDA) using Qwen3-Embedding-0.6B.
-3. **Ingest** — Embeddings are batch-upserted into Qdrant with deterministic IDs.
-4. **Retrieve** — At query time, semantic search finds relevant chunks, filtered by similarity threshold and deduplicated.
-5. **Generate** — Retrieved chunks are grounded into a prompt and streamed from `llama-3.3-70b-versatile` via the Groq API.
-6. **Chat** — A CLI loop drives the conversation, with a dual-gate check to reduce hallucinated answers.
+2. **Data/notes** — The folder where markdown notes will be saved
+3. **Embed** — Chunks are embedded locally on an NVIDIA GPU (PyTorch + CUDA) using Qwen3-Embedding-0.6B.
+4. **Ingest** — Embeddings are batch-upserted into Qdrant with deterministic IDs.
+5. **Retrieve** — At query time, semantic search finds relevant chunks, filtered by similarity threshold and deduplicated.
+6. **Generate** — Retrieved chunks are grounded into a prompt and streamed from `llama-3.3-70b-versatile` via the Groq API.
+7. **Chat** — A CLI loop drives the conversation, with a dual-gate check to reduce hallucinated answers.
 
 ## Setup
 
