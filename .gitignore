@@ -32,5 +32,6 @@ Thumbs.db
 *.mp3
 *.db
 
-data/notes/*
+data/notes/*.md
+data/notes/*/*.md
 .env
